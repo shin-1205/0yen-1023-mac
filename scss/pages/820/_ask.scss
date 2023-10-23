@@ -1,0 +1,1142 @@
+@use "./../../common/mixin" as *;
+
+.p-ask{
+  padding: 34px 0 30px 0;
+  background: url("../images/ask-hero-bg.png") no-repeat center center / cover;
+
+  @include mq(768px){
+    padding: 40px 30px;
+    background: url("../images/ask-hero-bg-sp.png") no-repeat center center / cover;
+  }
+}
+
+.p-ask-hero{
+  max-width: 1060px;
+  margin: 0 auto;
+  &__top{
+    padding: 46px 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(2px);
+
+    @include mq(768px){
+      padding: 32px 0;
+    }
+    .top{
+      display: block;
+      max-width: 190px;
+      margin: 0 auto 17px;
+      color: #000;
+      font-size: 32px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.32px;
+      text-align: center;
+      position: relative;
+
+      @include mq(768px){
+        max-width: 100px;
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.16px;
+      }
+
+      &::before, &::after{
+        content: "";
+        display: block;
+        width: 18.023px;
+        height: 28.567px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        @include mq(768px){
+          width: 10.109px;
+          height: 16.024px;
+        }
+      }
+      &::before{
+        background: url("../images/ask-line-before.png") no-repeat left top / 100% 100%;
+        left: 0;
+      }
+      &::after{
+        background: url("../images/ask-line-after.png") no-repeat left top / 100% 100%;
+        right: 0;
+      }
+    }
+
+    .mid{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+
+      @include mq(768px){
+        flex-wrap: wrap;
+      }
+      .left{
+        color: var(--text-color-secondary, #333);
+        font-size: 48px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.48px;
+
+        @include mq(768px){
+          font-size: 24px;
+          font-weight: 700;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.24px;
+        }
+
+        .under{
+          border-bottom: 6.49px solid #f98938;
+          color: var(--theme-color-theme, #f98938);
+          font-size: 60px;
+          font-weight: 700;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.6px;
+
+          @include mq(768px){
+            border-bottom: 3.64px solid #f98938;
+            font-size: 32px;
+            font-weight: 700;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.32px;
+          }
+
+          .num{
+            font-family: "Roboto";
+            font-size: 120px;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 0;
+            letter-spacing: 1.2px;
+
+            @include mq(768px){
+              font-size: 67.31px;
+              font-weight: 700;
+              font-style: normal;
+              line-height: 0;
+              letter-spacing: 0.673px;
+            }
+          }
+        }
+      }
+
+      .right{
+        color: var(--text-color-secondary, #333);
+        font-size: 48px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 60.226px; /* 125.471% */
+        letter-spacing: 0.48px;
+        position: relative;
+        top: 6px;
+
+        @include mq(768px){
+          font-size: 24px;
+          font-weight: 700;
+          font-style: normal;
+          line-height: 33.782px; /* 140.757% */
+          letter-spacing: 0.24px;
+          text-shadow: 0 0 6.170071125030518px #fff;
+        }
+
+        .white{
+          width: 85.161px;
+          height: 85.161px;
+          padding: 0 10px;
+          margin-right: 2px;
+          border: 3.703px solid var(--theme-color-theme, #f98938);
+          color: var(--theme-color-theme, #f98938);
+          font-size: 59px;
+          font-weight: 700;
+          font-style: normal;
+          //   line-height: 118.858px; /* 201.25% */
+          letter-spacing: 0.591px;
+
+          @include mq(768px){
+            margin-right: 1.12px;
+            border: 2.077px solid var(--theme-color-theme, #f98938);
+            font-size: 33.128px;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 66.669px;
+            letter-spacing: 0.331px;
+          }
+        }
+
+        .orange{
+          width: 85.161px;
+          height: 85.161px;
+          padding: 0 10px;
+          margin-right: 2px;
+          background: #f98938;
+          border: 3.703px solid var(--theme-color-theme, #f98938);
+          color: #fff;
+          font-size: 59px;
+
+          @include mq(768px){
+            margin-right: 1.12px;
+            border: 2.077px solid var(--theme-color-theme, #f98938);
+            font-size: 33.128px;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 66.669px; /* 201.25% */
+            letter-spacing: 0.331px;
+          }
+        }
+      }
+    }
+    .bot{
+      color: #000;
+      font-size: 60px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.6px;
+      text-align: center;
+      text-shadow: 0 0 11px #fff;
+
+      @include mq(768px){
+        font-size: 29px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.32px;
+        text-shadow: 0 0 6.170071125030518px #fff;
+      }
+    }
+  }
+
+
+
+  &__bot{
+    padding: 20px 0 55px;
+    background: url("../images/ask-hero-bot.png") no-repeat center center / 100% 100%;
+    font-family: "Noto Sans JP";
+    color: var(--, #333);
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.96);
+    position: relative;
+    bottom: 2px;
+
+    @include mq(768px){
+      padding: 17px 0 35px;
+      background: url("../images/ask-hero-bot-sp.png") no-repeat center center / cover;
+    }
+    @include mq(768px){
+      font-size: 20px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.2px;
+      text-shadow: 0 0 3.6159169673919678px rgba(255, 255, 255, 0.96);
+    }
+
+    .span{
+      color: var(--, #333);
+      font-size: 36px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.36px;
+
+      @include mq(768px){
+        font-size: 24px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.24px;
+      }
+    }
+
+    .red{
+      color: var(--text-color-primary, #c82626);
+      font-size: 36px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.36px;
+
+      @include mq(768px){
+        font-size: 24px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.24px;
+      }
+    }
+  }
+}
+
+/* test */
+
+.test{
+  max-width: 1060px;
+  padding: 56px 0 56px;
+  margin: 0 auto;
+  background: #faf6e7;
+  overflow: hidden;
+  position: relative;
+
+  .content{
+    font-family: "Noto Sans JP";
+    color: #000;
+    font-size: 20px;
+    font-weight: 350;
+    font-style: normal;
+    line-height: 34px; /* 170% */
+    letter-spacing: 2px;
+    text-align: center;
+
+    @include mq(768px){
+      font-size: 14px;
+      font-weight: 350;
+      font-style: normal;
+      line-height: 34px; /* 242.857% */
+      letter-spacing: 1.4px;
+    }
+  }
+
+  .sp-img{
+    display: none;
+    max-width: 300px;
+    margin: 10px auto;
+
+    @include mq(768px){
+      display: block;
+    }
+  }
+
+  &__box{
+    max-width: 1060px;
+    background: #fff;
+
+    .top{
+      .flex{
+        &1, &2, &3, &4{
+          font-family: "Roboto";
+          color: #fff !important;
+          font-size: 28px;
+          font-weight: 700;
+          font-style: normal;
+          line-height: 60px;
+          letter-spacing: 1.897px;
+
+          @include mq(768px){
+            height: 62px;
+          }
+        }
+      }
+    }
+
+
+
+    .check{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 160px;
+      color: var(--unnamed, #333);
+
+      @include mq(768px){
+        gap: 40px;
+      }
+
+      .left, .right{
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        margin: 60px 0 50px;
+
+        @include mq(768px){
+          margin: 30px 0 30px;
+        }
+
+        input[type=radio]{
+          display: none;
+          &:checked + label{
+            &::after{
+              display: block;
+              width: 33px;
+              height: 32px;
+              background: url("../images/green-circle.png") no-repeat left top / 100% 100%;
+              top: 2px;
+              left: -1px;
+              z-index: 2;
+
+              @include mq(768px){
+                top: -4px;
+              }
+            }
+          }
+        }
+
+        label{
+          display: inline-block;
+          padding-left: 45px;
+          font-family: "Noto Sans JP";
+          color: var(--unnamed, #333);
+          font-size: 28px;
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: 1.897px;
+          position: relative;
+
+          @include mq(768px){
+            font-size: 20px;
+          }
+
+          &::before, &::after{
+            content: "";
+            display: block;
+            pointer-events: none;
+            position: absolute;
+          }
+          &::before{
+            width: 32px;
+            height: 32px;
+            background: #fff;
+            border: 2px solid #d9d9d9;
+            border-radius: 50%;
+            top: 2px;
+            left: -1px;
+            left: 0;
+            z-index: 1;
+
+            @include mq(768px){
+              top: -6px;
+            }
+          }
+          &::after{
+            display: none;
+
+            @include mq(768px){
+            }
+          }
+        }
+      }
+    }
+    .check1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 64px;
+      color: var(--unnamed, #333);
+
+      @include mq(768px){
+        gap: 40px;
+      }
+
+      .left, .right{
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        margin: 60px 0 50px;
+
+        @include mq(768px){
+          margin: 30px 0 30px;
+        }
+
+        input[type=checkbox]{
+          display: none;
+          &:checked + label{
+            &::after{
+              display: block;
+              width: 32px;
+              height: 32px;
+              background: url("../images/green-check.png") no-repeat left top / 100% 100%;
+              top: 1px;
+              left: -1px;
+              z-index: 2;
+
+              @include mq(768px){
+                top: -4px;
+              }
+            }
+          }
+        }
+        label{
+          display: inline-block;
+          padding-left: 45px;
+          font-family: "Noto Sans JP";
+          color: var(--unnamed, #333);
+          font-size: 28px;
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: 1.897px;
+          position: relative;
+
+          @include mq(768px){
+            font-size: 20px;
+          }
+
+          &::before, &::after{
+            content: "";
+            display: block;
+            pointer-events: none;
+            position: absolute;
+          }
+          &::before{
+            width: 32px;
+            height: 32px;
+            background: #fff;
+            border: 2px solid #d9d9d9;
+            border-radius: 4px;
+            border-radius: 12px;
+            top: 1px;
+            left: -1px;
+            z-index: 1;
+
+            @include mq(768px){
+              top: -6px;
+            }
+          }
+          &::after{
+            display: none;
+
+            @include mq(768px){
+            }
+          }
+        }
+      }
+    }
+
+    &1{
+      .top{
+        .flex{
+          display: flex;
+          align-items: center;
+          height: 62px;
+          font-family: "Roboto";
+          color: #fff;
+          font-size: 28px;
+          font-weight: 700;
+          font-style: normal;
+          line-height: 71.153px; /* 254.118% */
+          letter-spacing: 1.897px;
+
+          @include mq(768px){
+            height: 42px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: 0.96px;
+          }
+
+          &1{
+            width: 25%;
+            height: 100%;
+            background: #f98938;
+            text-align: center;
+          }
+          &2{
+            width: 25%;
+            height: 100%;
+            background: #ddd;
+            text-align: center;
+          }
+          &3{
+            width: 25%;
+            height: 100%;
+            background: #c5c5c5;
+            text-align: center;
+          }
+          &4{
+            width: 25%;
+            height: 100%;
+            background: #a7a7a2;
+            text-align: center;
+          }
+        }
+      }
+
+      .bot{
+        padding: 31px 0;
+
+
+        .read{
+          font-family: "Noto Sans JP";
+          color: var(--unnamed, #333);
+          font-size: 24px;
+          font-weight: 700;
+          font-style: normal;
+          line-height: 71.153px; /* 296.471% */
+          letter-spacing: 1.897px;
+          text-align: center;
+          position: relative;
+
+          @include mq(768px){
+            width: 300px;
+            margin: 0 auto;
+            font-size: 20px;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 36px; /* 180% */
+            letter-spacing: 0.96px;
+
+            .sp{
+              display: block;
+            }
+          }
+
+          .sp{
+            display: none;
+          }
+        }
+      }
+    }
+    &2{
+      .top{
+        .flex{
+          display: flex;
+          align-items: center;
+          height: 62px;
+          font-family: "Roboto";
+          color: #fff;
+          font-size: 28px;
+          font-weight: 700;
+          font-style: normal;
+          line-height: 71.153px; /* 254.118% */
+          letter-spacing: 1.897px;
+
+          @include mq(768px){
+            height: 42px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: 0.96px;
+          }
+
+          &1{
+            width: 25%;
+            background: #ddd;
+            text-align: center;
+          }
+          &2{
+            width: 25%;
+            background: #f98938;
+            text-align: center;
+          }
+          &3{
+            width: 25%;
+            background: #c5c5c5;
+            text-align: center;
+          }
+          &4{
+            width: 25%;
+            background: #a7a7a2;
+            text-align: center;
+          }
+        }
+      }
+
+      .bot{
+        padding: 31px 0;
+
+        .read{
+          font-family: "Noto Sans JP";
+          color: var(--unnamed, #333);
+          font-size: 24px;
+          font-weight: 700;
+          font-style: normal;
+          line-height: 71.153px; /* 296.471% */
+          letter-spacing: 1.897px;
+          text-align: center;
+
+          @include mq(768px){
+            width: 222px;
+            margin: 0 auto;
+            font-size: 20px;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 36px; /* 180% */
+            letter-spacing: 0.96px;
+            .sp{
+              display: block;
+            }
+          }
+
+          .sp{
+            display: none;
+          }
+        }
+        .check{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 160px;
+
+          @include mq(768px){
+            gap: 40px;
+          }
+
+
+          .left{
+            label{
+              display: flex;
+              align-items: center;
+              gap: 11px;
+              cursor: pointer;
+
+              .text{
+                font-family: "Noto Sans JP";
+                color: var(--unnamed, #333);
+                font-size: 28px;
+                font-weight: 700;
+                font-style: normal;
+                line-height: 71.153px; /* 254.118% */
+                letter-spacing: 1.897px;
+
+                @include mq(768px){
+                  font-size: 20px;
+                  font-weight: 700;
+                  font-style: normal;
+                  line-height: 36px; /* 180% */
+                  letter-spacing: 0.96px;
+                }
+              }
+            }
+          }
+          .right{
+            label{
+              display: flex;
+              align-items: center;
+              gap: 11px;
+              cursor: pointer;
+
+              .text{
+                font-family: "Noto Sans JP";
+                color: var(--unnamed, #333);
+                font-size: 28px;
+                font-weight: 700;
+                font-style: normal;
+                line-height: 71.153px; /* 254.118% */
+                letter-spacing: 1.897px;
+
+                @include mq(768px){
+                  font-size: 20px;
+                  font-weight: 700;
+                  font-style: normal;
+                  line-height: 36px; /* 180% */
+                  letter-spacing: 0.96px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &3{
+      .top{
+        .flex{
+          display: flex;
+          align-items: center;
+          height: 62px;
+          font-family: "Roboto";
+          color: #fff;
+          font-size: 28px;
+          font-weight: 700;
+          font-style: normal;
+          line-height: 71.153px; /* 254.118% */
+          letter-spacing: 1.897px;
+
+          @include mq(768px){
+            height: 42px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: 0.96px;
+          }
+
+          &1{
+            width: 25%;
+            background: #ddd;
+            text-align: center;
+          }
+          &2{
+            width: 25%;
+            background: #c5c5c5;
+            text-align: center;
+          }
+          &3{
+            width: 25%;
+            background: #f98938;
+            text-align: center;
+          }
+          &4{
+            width: 25%;
+            background: #a7a7a2;
+            text-align: center;
+          }
+        }
+      }
+
+      .bot{
+        padding: 31px 0;
+
+        .read{
+          font-family: "Noto Sans JP";
+          color: var(--unnamed, #333);
+          font-size: 24px;
+          font-weight: 700;
+          font-style: normal;
+          line-height: 71.153px; /* 296.471% */
+          letter-spacing: 1.897px;
+          text-align: center;
+
+          @include mq(768px){
+            width: 284px;
+            margin: 0 auto;
+            font-size: 20px;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 36px; /* 180% */
+            letter-spacing: 0.96px;
+            .sp{
+              display: block;
+            }
+          }
+
+          .sp{
+            display: none;
+          }
+        }
+        .check{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 40px;
+
+          @include mq(768px){
+            gap: 40px;
+          }
+
+
+          .left{
+            label{
+              display: flex;
+              align-items: center;
+              gap: 11px;
+              cursor: pointer;
+
+              .text{
+                font-family: "Noto Sans JP";
+                color: var(--unnamed, #333);
+                font-size: 28px;
+                font-weight: 700;
+                font-style: normal;
+                line-height: 71.153px; /* 254.118% */
+                letter-spacing: 1.897px;
+              }
+            }
+          }
+          .right{
+            label{
+              display: flex;
+              align-items: center;
+              gap: 11px;
+              cursor: pointer;
+
+              .text{
+                font-family: "Noto Sans JP";
+                color: var(--unnamed, #333);
+                font-size: 28px;
+                font-weight: 700;
+                font-style: normal;
+                line-height: 71.153px; /* 254.118% */
+                letter-spacing: 1.897px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &4{
+      .top{
+        .flex{
+          display: flex;
+          align-items: center;
+          height: 62px;
+          font-family: "Roboto";
+          color: #fff;
+          font-size: 28px;
+          font-weight: 700;
+          font-style: normal;
+          line-height: 71.153px; /* 254.118% */
+          letter-spacing: 1.897px;
+
+          @include mq(768px){
+            height: 42px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: 0.96px;
+          }
+
+          &1{
+            width: 25%;
+            background: #ddd;
+            text-align: center;
+          }
+          &2{
+            width: 25%;
+            background: #c5c5c5;
+            text-align: center;
+          }
+          &3{
+            width: 25%;
+            background: #a7a7a2;
+            text-align: center;
+          }
+          &4{
+            width: 25%;
+            background: #f98938;
+            text-align: center;
+          }
+        }
+      }
+
+      .bot{
+        padding: 31px 0;
+
+        .read{
+          font-family: "Noto Sans JP";
+          color: var(--unnamed, #333);
+          font-size: 24px;
+          font-weight: 700;
+          font-style: normal;
+          line-height: 71.153px; /* 296.471% */
+          letter-spacing: 1.897px;
+          text-align: center;
+
+          @include mq(768px){
+            width: 348px;
+            margin: 0 auto;
+            color: var(--unnamed, #333);
+            font-size: 20px;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 36px; /* 180% */
+            letter-spacing: 0.96px;
+
+            ont-family: "Noto Sans JP";
+            .sp{
+              display: block;
+            }
+          }
+
+          .sp{
+            display: none;
+          }
+        }
+        .check{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 64px;
+
+          @include mq(768px){
+            gap: 40px;
+          }
+
+
+          .left{
+            label{
+              display: flex;
+              align-items: center;
+              gap: 11px;
+              cursor: pointer;
+
+              .text{
+                font-family: "Noto Sans JP";
+                color: var(--unnamed, #333);
+                font-size: 28px;
+                font-weight: 700;
+                font-style: normal;
+                line-height: 71.153px; /* 254.118% */
+                letter-spacing: 1.897px;
+              }
+            }
+          }
+          .right{
+            label{
+              display: flex;
+              align-items: center;
+              gap: 11px;
+              cursor: pointer;
+
+              .text{
+                font-family: "Noto Sans JP";
+                color: var(--unnamed, #333);
+                font-size: 28px;
+                font-weight: 700;
+                font-style: normal;
+                line-height: 71.153px; /* 254.118% */
+                letter-spacing: 1.897px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.green1{
+  background: #f98938;
+  position: relative;
+
+  &::before{
+    content: "";
+    display: block;
+    width: 23.718px;
+    height: 62px;
+    margin: auto;
+    background: url("../images/test-orange.png") no-repeat left top/100% 100%;
+    position: absolute;
+    top: 0;
+    right: -23px;
+    bottom: 0;
+    z-index: 2;
+
+    @include mq(768px){
+      content: "";
+      display: block;
+      width: 18.7px;
+      height: 62px;
+      margin: auto;
+      background: url("../images/test-orange.png") no-repeat left top/100% 100%;
+      position: absolute;
+      top: 0;
+      right: -17px;
+      bottom: 0;
+      z-index: 2;
+    }
+  }
+}
+
+
+.gray1{
+  background: #ddd;
+  position: relative;
+
+  &::before{
+    content: "";
+    display: block;
+    width: 23.718px;
+    height: 62px;
+    margin: auto;
+    background: url("../images/test-gray1.png") no-repeat left top/100% 100%;
+    position: absolute;
+    top: 0;
+    right: -23px;
+    bottom: 0;
+    z-index: 2;
+
+    @include mq(768px){
+      width: 20.7px;
+      height: 71px;
+      right: -20px;
+    }
+  }
+}
+
+.gray2{
+  background: #c5c5c5;
+  position: relative;
+
+  &::before{
+    content: "";
+    display: block;
+    width: 23.718px;
+    height: 62px;
+    margin: auto;
+    background: url("../images/test-gray2.png") no-repeat left top/100% 100%;
+    position: absolute;
+    top: 0;
+    right: -23px;
+    bottom: 0;
+    z-index: 2;
+
+    @include mq(768px){
+      width: 20.7px;
+      height: 71px;
+      right: -20px;
+    }
+  }
+}
+
+.gray3{
+  background: #a7a7a2;
+  position: relative;
+
+  &::before{
+    content: "";
+    display: block;
+    width: 23.718px;
+    height: 62px;
+    margin: auto;
+    background: url("../images/test-gray3.png") no-repeat left top/100% 100%;
+    position: absolute;
+    top: 0;
+    right: -23px;
+    bottom: 0;
+
+    @include mq(768px){
+      width: 20.7px;
+      height: 71px;
+      right: -20px;
+    }
+  }
+}
+
+.answer{
+  display: block;
+  width: 442.219px;
+  height: 114.121px;
+  margin: 56px auto;
+  background: url("../images/ask-button.png") no-repeat left top / 100% 100%;
+  border: none;
+  border-radius: 70.029px;
+  cursor: pointer;
+  font-family: "Noto Sans JP";
+  color: #fff;
+  font-size: 33.965px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 32.421px; /* 95.455% */
+  letter-spacing: 1.945px;
+  text-align: center;
+  transition: 0.3s;
+
+  @include mq(768px){
+    width: 341px;
+    height: 88px;
+    font-size: 26.19px;
+    line-height: 25px; /* 95.455% */
+    letter-spacing: 1.5px;
+  }
+
+  &:hover{
+    opacity: 0.7;
+  }
+}
