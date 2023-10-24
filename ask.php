@@ -164,9 +164,26 @@
         </div>
       </form>
     </section>
-    <footer>
-
-    </footer>
+    <footer class="p-top-footer">
+    <section class="p-top-footer__top">
+      <div class="left">
+        <img src="./images/footer-logo.png" alt="" class="img">
+        <p class="text">株式会社 竹山美装</p>
+      </div>
+      <div class="right">
+        <div class="top">運営会社：株式会社竹山美装<br>
+          〒264-0017<br>
+          千葉県千葉市若葉区加曾利町1002-5</div>
+        <div class="bot">
+          <div class="title">会社概要</div>
+          <a href="" class="link">- 企業HP<img src="./images/footer-link.png" alt="" class="img"></a>
+        </div>
+      </div>
+    </section>
+    <section class="p-top-footer__bot">
+      <p class="text">Copyright © TAKEYAMABISOU All Rights Reserved</p>
+    </section>
+  </footer>
   </main>
   <!-- <?php include_once("../tag/end_body_tag.php") ?> -->
 </body>
